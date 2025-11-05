@@ -1,0 +1,26 @@
+    1  git config --global user.name "Oleksii Shevchenko"
+    2  git config --global user.email "shai31bml@gmail.com"
+    3  git config --global --list
+    4  git clone https://github.com/shai-boti/HW_10.git
+    5  cd HW_10
+    6  touch text_ignore.txt
+    7  vim .gitignore
+    8  git status
+    9  git add .
+   10  git commit -m "c1"
+   11  touch main_test.txt
+   12  git add .
+   13  git commit -m "c2"
+   14  git checkout -b develop
+   15  touch develop_test.txt
+   16  git add .
+   17  git commit -m "c3.1"
+   18  vim develop_test.txt
+   19  git status
+   20  git add .
+   21  git commit -m "c3.2"
+   22  git checkout main
+   23  git branch
+   24  git merge develop
+   25  git log
+   26  history > command_list.csv
